@@ -1,0 +1,11 @@
+.story-list {
+  width: 980px;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+.story-list td {
+  border-top: 1px solid #ccc
+}
+
+
