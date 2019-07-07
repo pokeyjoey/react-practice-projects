@@ -1,11 +1,17 @@
 .story-list {
-  width: 980px;
+  width: 1500px;
   border: 1px solid #ccc;
   border-collapse: collapse;
 }
 
-.story-list td {
-  border-top: 1px solid #ccc
+.story-list div {
+  border-top: 1px solid #ccc;
+}
+
+.story-list li {
+  list-style: none;
+  display: inline;
+  padding: 16px;
 }
 
 

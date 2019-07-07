@@ -5,13 +5,11 @@ import './index.css';
 
 function StoryList({ items } ) {
   return (
-    <table className="story-list">
-      <tbody>
+    <div className="story-list">
         {items.map(item => (
           <StoryListItem item={item} key={item.objectID}/>
         ))}
-      </tbody>
-    </table>
+    </div>
   );
 }
 StoryList.propTypes = {
@@ -20,9 +18,16 @@ StoryList.propTypes = {
 
 function StoryListItem({ item }) {
   return (
-    <tr className="strory-list-item">
-      <td className="story-name">{item.title}</td>
-    </tr>
+    <div className="story-list-item">
+      <h2 className="story-name">{item.title}</h2>
+      <ul className="story-info">
+        <li className="story-points">{item.points} points</li>
+        <li className="story-author">{item.author}</li>
+        <li className="story-points">{item.created_at}</li>
+        <li className="story-points">{item.num_comments} comments</li>
+        <li className="story-points">({item.url})</li>
+      </ul>
+    </div>
   );
 }
 StoryListItem.propTypes = {
