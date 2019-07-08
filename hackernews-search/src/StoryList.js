@@ -22,9 +22,9 @@ function StoryListItem({ item }) {
       <ul className="story-info">
         <li className="story-points">{item.points} points</li>
         <li className="story-author">{item.author}</li>
-        <li className="story-points">{item.created_at}</li>
-        <li className="story-points">{item.num_comments} comments</li>
-        <li className="story-points">({item.url})</li>
+        <li className="story-time">{item.created_at}</li>
+        <li className="story-comments">{item.num_comments} comments</li>
+        <li className="story-url">({item.url})</li>
       </ul>
     </div>
   );
