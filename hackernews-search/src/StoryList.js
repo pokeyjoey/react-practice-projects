@@ -18,7 +18,9 @@ StoryList.propTypes = {
 function StoryListItem({ item }) {
   return (
     <div className="story-list-item">
-      <h2 className="story-name">{item.title}</h2>
+      <h2 className="story-name">
+        <a href={item.url}>{item.title}</a>
+      </h2>
       <ul className="story-info">
         <li className="story-points">{item.points} points</li>
         <li className="story-author">{item.author}</li>
